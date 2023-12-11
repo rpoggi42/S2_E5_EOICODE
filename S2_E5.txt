@@ -1,0 +1,14 @@
+Il programma ci da un menu che ci fa scegliere se vogliamo moltiplicare, dividere e o inserire una strina.
+
+
+
+Il programma non gestisce casistiche diverse dagli input 'A', 'B' e 'C'. In più nel caso della moltiplicazione e della
+non viene protetto, si potrebbe stabilire un range di input per evitare un eventuale overflow, in più nella
+funzione dividi() non viene valutato il caso in cui l'utente possa inserire come denumeratore il valore di 0.
+Mentre nella funzione ins_string() il problema è che se un utente inserisce una stringa di oltre 10 char
+abbiamo un overflow.
+
+
+
+Nella funzione moltplica() e dividi() troviamo un errore logico nell inizializzazione delle variabili a e b che vanno
+inizializzate separatamente. In più nello scanf dovremmo utilizzare %hd per leggere un valore short int.
